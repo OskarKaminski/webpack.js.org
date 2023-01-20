@@ -47,7 +47,7 @@ The example above will only give you performance hints based on `.js` files.
 
 ### performance.hints
 
-`string = 'warning': 'error' | 'warning'` `boolean: false`
+`'error' | 'warning' | false`
 
 Turns hints on/off. In addition, tells webpack to throw either an error or a warning when hints are found.
 
@@ -88,7 +88,7 @@ An error will be displayed notifying you of a large asset. We recommend using `h
 
 ### performance.maxAssetSize
 
-`number = 250000`
+`number`
 
 An asset is any emitted file from webpack. This option controls when webpack emits a performance hint based on individual asset size in bytes.
 
@@ -103,7 +103,7 @@ module.exports = {
 
 ### performance.maxEntrypointSize
 
-`number = 250000`
+`number`
 
 An entry point represents all assets that would be utilized during initial load time for a specific entry. This option controls when webpack should emit performance hints based on the maximum entry point size in bytes.
 
